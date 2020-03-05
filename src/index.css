@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+}
+
+.main-bg {
+  background-image: radial-gradient(#ffb73a, #ff2079);
+}
+
+.logo {
+  animation-name: logo-in;
+  animation-duration: 1s;
+}
+
+@keyframes logo-in {
+  0% {
+    transform: scale(0, 0);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
