@@ -9,12 +9,17 @@ body {
 }
 
 .main-bg {
-  background-image: radial-gradient(#ffb73a, #ff2079);
+  background: radial-gradient(#ffb73a, #ff2079);
+
+  height: 100vh;
 }
 
 .logo {
+  transform: scale(0, 0);
   animation-name: logo-in;
   animation-duration: 1s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes logo-in {

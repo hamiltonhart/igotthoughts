@@ -7,7 +7,12 @@ import { FlexWrapper } from "../components/styled"
 
 const IndexPage = () => (
   <Layout>
-    <FlexWrapper height="100vh" background="#ffe427" className="main-bg">
+    <FlexWrapper
+      minHeight="100vh"
+      background="#ffb73a"
+      className="main-bg"
+      padding="5%"
+    >
       <SEO title="Home" />
       <Logo className="logo__component" />
     </FlexWrapper>
