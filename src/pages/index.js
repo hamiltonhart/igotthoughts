@@ -3,7 +3,7 @@ import SEO from "../components/seo"
 import Layout from "../components/layout"
 
 import { Logo } from "../components/logo"
-import { FlexWrapper } from "../components/styled"
+import { FlexWrapper, SimpleDiv } from "../components/styled"
 import { animated, useSpring } from "react-spring"
 
 const IndexPage = () => {
@@ -18,9 +18,11 @@ const IndexPage = () => {
         padding="5%"
       >
         <SEO title="Home" />
-        <animated.div style={fade}>
-          <Logo className="logo__component" />
-        </animated.div>
+        <SimpleDiv maxWidth="850px" margin="25px">
+          <animated.div style={fade}>
+            <Logo className="logo__component" />
+          </animated.div>
+        </SimpleDiv>
       </FlexWrapper>
     </Layout>
   )

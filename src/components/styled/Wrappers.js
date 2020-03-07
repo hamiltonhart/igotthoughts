@@ -10,11 +10,24 @@ export const FlexWrapper = styled.div`
     ${props => props.bottom && `bottom: ${props.bottom};`}
     ${props => props.left && `left: ${props.left};`}
     ${props => props.right && `right: ${props.right};`}
-    box-sizing: border-box;
+
     padding: ${props => props.padding || "0"};
     margin: ${props => props.margin || "0"};
     height: ${props => props.height || "inherit"};
     ${props => props.minHeight && `min-height: ${props.minHeight};`}
     width: ${props => props.width || "inherit"};
-    background: ${props => props.background || "white"};
+    background: ${props => props.background || "transparent"};
+`
+
+export const SimpleDiv = styled.div`
+  display: ${props => props.display || "block"};
+  box-sizing: border-box;
+  padding: ${props => props.padding || "0"};
+  margin: ${props => props.margin || "0"};
+  height: ${props => props.height || "inherit"};
+    ${props => props.minHeight && `min-height: ${props.minHeight};`}
+  width: ${props => props.width || "inherit"};
+  ${props => props.minWidth && `min-width: ${props.minWidth};`}
+  ${props => props.maxWidth && `max-width: ${props.maxWidth};`}
+  background: ${props => props.background || "transparent"};
 `

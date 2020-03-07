@@ -8,6 +8,14 @@ body {
   margin: auto;
 }
 
+.logo {
+  height: 100%;
+  width: 100%;
+}
+
+.logo-wrapper {
+}
+
 /* .main-bg {
   background: radial-gradient(#ffb73a, #ff2079);
 
