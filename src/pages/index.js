@@ -24,17 +24,7 @@ const IndexPage = () => {
       >
         <SEO title="Home" />
         <SimpleDiv maxWidth="850px" margin="25px">
-          <animated.div
-            style={{
-              opacity,
-              transform: scale
-                .interpolate({
-                  range: [0, 0.35, 0.75, 1],
-                  output: [0.2, 0.5, 1.5, 1],
-                })
-                .interpolate(scale => `scale(${scale})`),
-            }}
-          >
+          <animated.div style={fade}>
             <Logo className="logo__component" />
           </animated.div>
         </SimpleDiv>
