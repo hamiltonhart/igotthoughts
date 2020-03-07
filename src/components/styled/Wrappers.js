@@ -16,5 +16,5 @@ export const FlexWrapper = styled.div`
     height: ${props => props.height || "inherit"};
     ${props => props.minHeight && `min-height: ${props.minHeight};`}
     width: ${props => props.width || "inherit"};
-    background-color: ${props => props.background || "white"};
+    background: ${props => props.background || "white"};
 `

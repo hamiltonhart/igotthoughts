@@ -8,7 +8,7 @@ body {
   margin: auto;
 }
 
-.main-bg {
+/* .main-bg {
   background: radial-gradient(#ffb73a, #ff2079);
 
   height: 100vh;
@@ -32,4 +32,4 @@ body {
   100% {
     transform: scale(1, 1);
   }
-}
+} */
