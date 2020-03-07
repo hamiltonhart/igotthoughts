@@ -7,7 +7,12 @@ import { FlexWrapper, SimpleDiv } from "../components/styled"
 import { animated, useSpring } from "react-spring"
 
 const IndexPage = () => {
-  const { scale } = useSpring({ scale: 1, from: { scale: 0 } })
+  const { opacity, scale } = useSpring({
+    scale: 1,
+    opacity: 1,
+    from: { scale: 0.2, opacity: 0 },
+  })
+  const fade = useSpring({ opacity: 1, from: { opacity: 0 } })
 
   return (
     <Layout>
@@ -21,10 +26,11 @@ const IndexPage = () => {
         <SimpleDiv maxWidth="850px" margin="25px">
           <animated.div
             style={{
+              opacity,
               transform: scale
                 .interpolate({
                   range: [0, 0.35, 0.75, 1],
-                  output: [0, 0.5, 1.5, 1],
+                  output: [0.2, 0.5, 1.5, 1],
                 })
                 .interpolate(scale => `scale(${scale})`),
             }}
