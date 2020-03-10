@@ -1,19 +1,11 @@
-import React from "react"
+import React, { useState } from "react"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
 
-import { Logo } from "../components/logo"
+import { AnimatedLogo } from "../components/logo"
 import { FlexWrapper, SimpleDiv } from "../components/styled"
-import { animated, useSpring } from "react-spring"
 
 const IndexPage = () => {
-  const { opacity, scale } = useSpring({
-    scale: 1,
-    opacity: 1,
-    from: { scale: 0.2, opacity: 0 },
-  })
-  const fade = useSpring({ opacity: 1, from: { opacity: 0 } })
-
   return (
     <Layout>
       <FlexWrapper
@@ -23,10 +15,8 @@ const IndexPage = () => {
         padding="5%"
       >
         <SEO title="Home" />
-        <SimpleDiv maxWidth="850px" margin="25px">
-          <animated.div style={fade}>
-            <Logo className="logo__component" />
-          </animated.div>
+        <SimpleDiv margin="20px">
+          <AnimatedLogo />
         </SimpleDiv>
       </FlexWrapper>
     </Layout>

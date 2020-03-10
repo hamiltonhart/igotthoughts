@@ -1,10 +1,11 @@
 import React from "react"
 
-export const Logo = props => {
+export const Logo = ({ width }) => {
   return (
     <svg
+      preserveAspectRatio="xMidYMix meet"
       className="logo"
-      width="829"
+      width={width || "829"}
       height="672"
       viewBox="0 0 829 672"
       fill="none"
